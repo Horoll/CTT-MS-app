@@ -17,7 +17,9 @@ Route::rule([
     'logout' =>  'index/Auth/logout',
     //login页面，只允许post请求
     'login'  =>  ['index/Auth/login',['method'=>'get|post']],
-    //权限认证，只允许post方式请求
-    'checkauth' =>  ['index/Auth/checkAuth',['method'=>'get|post']],
 ]);
 
+Route::rule([
+    'perinfo' => 'index/PerInfo/index',//查看个人信息
+    'changepwd' => 'index/PerInfo/changepwd'//修改密码
+]);
