@@ -53,9 +53,9 @@ class StuffApply extends Base
         if($num<$data['leave_quantity'])
             return returnWarning('申请数量大于库存数量！');
 
-        //通过cookie来找到当前管理员姓名
-        $staff = $this->staff->name;
-        $data['staff'] = $staff;
+        //获取装维人员姓名
+        $staffName = $this->staff->name;
+        $data['staff'] = $staffName;
 
         //添加记录到StuffOutRecord模型
         $res = Manage::add($this->model,$this->validate,$data);
