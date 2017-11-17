@@ -26,3 +26,16 @@ function returnWarning($message){
 function returnError($message){
     return json(['state'=>'error','message'=>$message]);
 }
+
+/**
+ * 查询输入数据是否在数据库中存在
+ * @param string $table 表名
+ * @param string $column 字段名
+ * @param string $value 值
+ * @return bool
+ */
+function dataIsExist($table,$column,$value){
+    $res = db($table)->where($column,$value)->find();
+    if(!$res) return false;
+    return true;
+}

@@ -42,15 +42,16 @@ class StuffApply extends Base
     //装维申请材料
     public function apply(){
         $json = $_POST['json'];
-        $json = '';
+        //$json = '{"inventory_id":1,"storehouse":"丹棱一库","out_quantity":20,"staff":"张三","apply_date":"2017-11-17"}';
         $data = json_decode($json,true);
+
 
         $checkRes = $this->checkData($data);
         if($checkRes!==true) return $checkRes;
 
         //检测调拨数量是否大于库存数
         $num = db('inventory')->where('id',$data['inventory_id'])->value('quantity');
-        if($num<$data['leave_quantity'])
+        if($num<$data['out_quantity'])
             return returnWarning('申请数量大于库存数量！');
 
         //获取装维人员姓名
