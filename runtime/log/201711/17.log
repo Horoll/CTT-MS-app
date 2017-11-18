@@ -1292,3 +1292,794 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000946s ]
 [ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000523s ]
 [ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='7be9c3075361d5104aa9e153b5d1c004'  WHERE  `phone` = '123123' [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2017-11-17T21:59:19+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.034838s][吞吐率：28.70req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001231s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.002482s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000790s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='8e39814eb6016851955e5ad416698e6a'  WHERE  `phone` = '123123' [ RunTime:0.000613s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:00:59+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.040400s][吞吐率：24.75req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001242s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001403s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='91afdab6ccd7eee9f38ea147f528cbbe'  WHERE  `phone` = '123123' [ RunTime:0.000733s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:03:54+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.030862s][吞吐率：32.40req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001263s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001167s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='72c113922a85533dd96168d9592215c3'  WHERE  `phone` = '123123' [ RunTime:0.000428s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:04:47+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.036796s][吞吐率：27.18req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001472s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001312s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000945s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='af3b0d336b61ac22e3143ba1a18abf73'  WHERE  `phone` = '123123' [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:07:14+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.036363s][吞吐率：27.50req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001204s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='163c80459f71a49c4e0d5f97054b428c'  WHERE  `phone` = '123123' [ RunTime:0.000402s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:09:08+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.038007s][吞吐率：26.31req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001328s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001179s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='4c23903f7bb2e2a332d3f96f252338ec'  WHERE  `phone` = '123123' [ RunTime:0.000412s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:09:43+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.033032s][吞吐率：30.27req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000886s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='985a1f58091c30b719bc199963cf1b1b'  WHERE  `phone` = '123123' [ RunTime:0.000587s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:11:30+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.038739s][吞吐率：25.81req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001271s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='41c1abe8146a1d05016a2ead9d0461cf'  WHERE  `phone` = '123123' [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:12:03+08:00 ] 10.2.130.178 10.2.130.115 GET /CTT-MS-app/login?staffname=123123&password=123123
+[ info ] 10.2.130.178/CTT-MS-app/login?staffname=123123&password=123123 [运行时间：0.036055s][吞吐率：27.74req/s] [内存消耗：3,289.96kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.130.178',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'staffname=ccedf890b27ac29ec83740a3685ad921',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001266s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000770s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='049be92831565bf5d172006343667b2e'  WHERE  `phone` = '123123' [ RunTime:0.000479s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:13:02+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.032966s][吞吐率：30.33req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000841s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001308s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='191712ed9af8466940dde21771461ec5'  WHERE  `phone` = '123123' [ RunTime:0.000502s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:13:36+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.049556s][吞吐率：20.18req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001205s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='551e32e832eb07d9fe0c5757402620d6'  WHERE  `phone` = '123123' [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:21:17+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.032837s][吞吐率：30.45req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001474s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='05abe23c0daa65e3dd5f0437da09dcd4'  WHERE  `phone` = '123123' [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:21:27+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.030087s][吞吐率：33.24req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000809s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='e3e956deb92a428b0bbb56b5c08e9e17'  WHERE  `phone` = '123123' [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:21:35+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.029717s][吞吐率：33.65req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001146s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='ced82bd2d634f40fef122007db241f02'  WHERE  `phone` = '123123' [ RunTime:0.000406s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:21:36+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.029032s][吞吐率：34.44req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001022s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='ef7900408bde4e12fa3bc3e58f6472cc'  WHERE  `phone` = '123123' [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:21:44+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.025442s][吞吐率：39.31req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001224s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='e59698753eb114f21e66808f1df05522'  WHERE  `phone` = '123123' [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:21:45+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.029408s][吞吐率：34.00req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001220s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='6147f3d9158dc6f5676fc0e54d292efe'  WHERE  `phone` = '123123' [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:21:51+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.029106s][吞吐率：34.36req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001195s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='591b98cad59757633cc2423d01f57851'  WHERE  `phone` = '123123' [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:22:45+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.025547s][吞吐率：39.14req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001194s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='7770b46984677da89a3de5d97b20090d'  WHERE  `phone` = '123123' [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:23:41+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.026489s][吞吐率：37.75req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001283s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001752s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='7bbd54b054e1a03a34fa2a0a1d351b87'  WHERE  `phone` = '123123' [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:28:23+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.029149s][吞吐率：34.31req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001198s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000819s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='449074c602ec8516ba2047bda9082b81'  WHERE  `phone` = '123123' [ RunTime:0.000574s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:29:23+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.025922s][吞吐率：38.58req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001267s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001780s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='2c74160526069d5578b02a37ed318139'  WHERE  `phone` = '123123' [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:30:30+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/login
+[ info ] 10.2.130.178/CTT-MS-app/login [运行时间：0.027545s][吞吐率：36.30req/s] [内存消耗：3,288.93kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '32',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001292s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001147s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000692s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='8a547f2d306efd4d3d85a59b3a19b903'  WHERE  `phone` = '123123' [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[ 2017-11-17T22:30:30+08:00 ] 10.2.130.178 10.2.130.115 POST /CTT-MS-app/perinfo
+[ info ] 10.2.130.178/CTT-MS-app/perinfo [运行时间：0.033758s][吞吐率：29.62req/s] [内存消耗：3,707.06kb] [文件加载：56]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'PerInfo',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '39',
+  'host' => '10.2.130.178',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.9.0',
+)
+[ info ] [ PARAM ] array (
+  'cookie' => '8a547f2d306efd4d3d85a59b3a19b903',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\PerInfo->index[ E:\code\php\CTT-MS-app\application\index\controller\PerInfo.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001470s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001613s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '8a547f2d306efd4d3d85a59b3a19b903' LIMIT 1 [ RunTime:0.000473s ]
