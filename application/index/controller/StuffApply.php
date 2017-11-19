@@ -1,5 +1,6 @@
 <?php
 namespace app\index\controller;
+use think\Db;
 
 class StuffApply extends Base
 {
@@ -41,8 +42,8 @@ class StuffApply extends Base
 
     //装维申请材料
     public function apply(){
-        $json = $_POST['json'];
-        //$json = '{"inventory_id":1,"storehouse":"丹棱一库","out_quantity":20,"staff":"张三","apply_date":"2017-11-17"}';
+        //$json = $_POST['json'];
+        $json = '{"inventory_id":1,"storehouse":"丹棱一库","out_quantity":20,"staff":"张三","apply_date":"2017-11-17"}';
         $data = json_decode($json,true);
 
 
@@ -62,4 +63,43 @@ class StuffApply extends Base
         $res = Manage::add($this->model,$this->validate,$data);
         return json($res);
     }
+
+    //查看自己的材料申请
+    public function check(){
+        $apps = Db::table('stuff_out_record')
+            ->where('staff',$this->staff->name)
+            ->select();
+        return json($apps);
+    }
+
+    //检查id
+    private function checkId($id){
+        $app = Db::table('stuff_out_record')
+            ->where('id',$id)
+            ->find();
+        if(empty($app))
+            return returnWarning('该申请不存在');
+        if($app['staff']!==$this->staff->name)
+            return returnWarning('你不是该申请申请人');
+        return $app;
+    }
+
+    //取消申请（只能在未确定领取之前取消）
+    public function cancel($id){
+        $res = $this->checkId($id);
+        if(!is_null(json_decode($res)))
+            return $res;
+        if($res['is_out']==4 || $res['is_out']==5)
+            return returnWarning('材料已经发放，无法取消');
+        Db::table('stuff_out_record')
+            ->where('id',$id)
+            ->delete();
+        return returnSuccess('申请已取消');
+    }
+
+    //修改申请
+    public function chagge(){
+        
+    }
+
 }

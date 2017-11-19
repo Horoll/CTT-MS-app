@@ -1,0 +1,131 @@
+---------------------------------------------------------------
+[ 2017-11-19T10:57:29+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/apply
+[ info ] localhost/ctt-ms-app/stuffapply/apply [运行时间：0.669699s][吞吐率：1.49req/s] [内存消耗：2,217.80kb] [文件加载：44]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'apply',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'sessionid=ju6w82dp7v5kfniqmkqyz8oyr95hoi84; pgv_pvi=4484905984; _ga=GA1.1.203632370.1510848144; csrftoken=hP2kz6A2TThNEpfhLAqDRyRBIL6N1BjynFRQQe1Pbmw1jSePrYpG4BFXC6lWgmlw; PHPSESSID=0cc0k6anbonpbj9161olt3ffk1; username=2379a74a26280d9ce75cc2c7ef575eb3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-19T10:57:30+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/apply
+[ info ] localhost/ctt-ms-app/stuffapply/apply [运行时间：0.021866s][吞吐率：45.73req/s] [内存消耗：2,218.20kb] [文件加载：44]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'apply',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'sessionid=ju6w82dp7v5kfniqmkqyz8oyr95hoi84; pgv_pvi=4484905984; _ga=GA1.1.203632370.1510848144; csrftoken=hP2kz6A2TThNEpfhLAqDRyRBIL6N1BjynFRQQe1Pbmw1jSePrYpG4BFXC6lWgmlw; PHPSESSID=0cc0k6anbonpbj9161olt3ffk1; username=2379a74a26280d9ce75cc2c7ef575eb3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-19T10:57:35+08:00 ] ::1 ::1 GET /ctt-ms-app/login?staffname=123123&password=123123
+[ info ] localhost/ctt-ms-app/login?staffname=123123&password=123123 [运行时间：0.174050s][吞吐率：5.75req/s] [内存消耗：3,291.22kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'sessionid=ju6w82dp7v5kfniqmkqyz8oyr95hoi84; pgv_pvi=4484905984; _ga=GA1.1.203632370.1510848144; csrftoken=hP2kz6A2TThNEpfhLAqDRyRBIL6N1BjynFRQQe1Pbmw1jSePrYpG4BFXC6lWgmlw; PHPSESSID=0cc0k6anbonpbj9161olt3ffk1; username=2379a74a26280d9ce75cc2c7ef575eb3',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000983s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='26700c13f0877fbed58bf3fad5c7799b'  WHERE  `phone` = '123123' [ RunTime:0.000710s ]
+---------------------------------------------------------------
+[ 2017-11-19T10:57:42+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/apply
+[ info ] localhost/ctt-ms-app/stuffapply/apply [运行时间：0.180020s][吞吐率：5.55req/s] [内存消耗：3,756.56kb] [文件加载：59]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'apply',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'sessionid=ju6w82dp7v5kfniqmkqyz8oyr95hoi84; pgv_pvi=4484905984; _ga=GA1.1.203632370.1510848144; csrftoken=hP2kz6A2TThNEpfhLAqDRyRBIL6N1BjynFRQQe1Pbmw1jSePrYpG4BFXC6lWgmlw; PHPSESSID=0cc0k6anbonpbj9161olt3ffk1; username=2379a74a26280d9ce75cc2c7ef575eb3; staffname=26700c13f0877fbed58bf3fad5c7799b',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\StuffApply->apply[ E:\code\php\CTT-MS-app\application\index\controller\StuffApply.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001019s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '26700c13f0877fbed58bf3fad5c7799b' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `inventory` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `inventory` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT `enabled` FROM `inventory` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `storehouse` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `storehouse` WHERE  `name` = '丹棱一库' LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT `area` FROM `storehouse` WHERE  `name` = '丹棱一库' LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT `quantity` FROM `inventory` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.000934s ]
+[ sql ] [ SQL ] INSERT INTO `stuff_out_record` (`inventory_id` , `storehouse` , `out_quantity` , `staff` , `apply_date`) VALUES (1 , '丹棱一库' , 20 , '张三' , '2017-11-17') [ RunTime:0.001274s ]
