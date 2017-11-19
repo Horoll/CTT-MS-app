@@ -16,7 +16,6 @@ class StuffApply extends Base
         }
     }
 
-
     //用于检验存入stuff_out_record表的数据是否正确
     private function checkData($data){
         //检测材料批次在数据库中是否真的存在
@@ -30,7 +29,7 @@ class StuffApply extends Base
 
         //检测仓库在数据库中是否真的存在
         if(!dataIsExist('storehouse','name',$data['storehouse']))
-            return returnWarning('调离仓库不存在!');
+            return returnWarning('申请仓库不存在!');
 
         //检测选择的仓库与装维是否在同一地区
         $storehouseArea = db('storehouse')->where('name',$data['storehouse'])->value('area');
@@ -98,7 +97,12 @@ class StuffApply extends Base
     }
 
     //修改申请
-    public function chagge(){
+    public function chage(){
+        
+    }
+
+    //重新提交申请
+    public function reSubmit(){
         
     }
 

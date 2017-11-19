@@ -30,11 +30,9 @@ Route::rule([
 
 //各种选择的查询
 Route::rule([
-    'storehousequery' => 'index/Query/storehouse',//仓库查询
-    'teamquery' => 'index/Query/team',//班组查询
-    'categoryquery' => 'index/Query/category',//材料大类查询
-    'stuffquery' => 'index/Query/stuff', //材料名称
-    'stuffwithidquery' => 'index/Query/stuffWithId', //材料名称和id
-    'manufacturerquery' => 'index/Query/manufacturer', //所有生产商名
-    'userstorehousequery' => 'index/Query/userStorehouse', //当前管理员所在仓库
+    'query/belongarea' => 'index/Query/belongArea',//查找装维人员所在地区
+    'query/avalibleStorehouse' => 'index/Query/avalibleStorehouse',//能申请材料的仓库（同一地区）
+    'query/allcategory' => 'index/Query/allCategory',//返回所有的材料大类
+    'query/stuffname' => 'index/Query/stuffname',//根据材料大类返回所有的材料id和名称
+    'query/selectoption' => 'index/Query/selectOption',//根据材料id和仓库名称返回所有可选的库存
 ]);
