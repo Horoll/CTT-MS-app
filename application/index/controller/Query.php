@@ -35,7 +35,12 @@ class Query extends Base
     //根据材料大类返回材料名称和id
     public function stuffName($categoryName){
         $res = Db::table('stuff')->where('category_name',$categoryName)->column('stuff_name','id');
-        return json($res);
+        $data = [];
+        foreach ($res as $key=>$value){
+            $iter = ['id'=>$key,'name'=>$value];
+            array_push($data,$iter);
+        }
+        return json($data);
     }
 
     //根据仓库名和材料id，返回库存
