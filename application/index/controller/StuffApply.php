@@ -58,6 +58,9 @@ class StuffApply extends Base
         $staffName = $this->staff->name;
         $data['staff'] = $staffName;
 
+        //获取当前日期
+        $data['apply_data'] = date('Y-m-d');
+
         //添加记录到StuffOutRecord模型
         $res = Manage::add($this->model,$this->validate,$data);
         return json($res);
@@ -134,5 +137,4 @@ class StuffApply extends Base
                 ]);
         return returnSuccess('已重新申请');
     }
-
 }

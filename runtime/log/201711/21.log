@@ -1,0 +1,101 @@
+---------------------------------------------------------------
+[ 2017-11-21T14:00:29+08:00 ] 10.2.130.178 10.2.130.115 GET /CTT-MS-app/login?staffname=123123&password=123123
+[ info ] 10.2.130.178/CTT-MS-app/login?staffname=123123&password=123123 [运行时间：0.873132s][吞吐率：1.15req/s] [内存消耗：3,287.72kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.130.178',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '123123',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004330s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.011621s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '123123' LIMIT 1 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='3597b8b59b59787b479b2870bc596cbc'  WHERE  `phone` = '123123' [ RunTime:0.000625s ]
+---------------------------------------------------------------
+[ 2017-11-21T14:01:37+08:00 ] 10.2.130.178 10.2.130.115 GET /CTT-MS-app/query/stuffname?cookie=3597b8b59b59787b479b2870bc596cbc&cagetoryName=%E9%93%81%E9%80%9A%E6%9D%90%E6%96%99
+[ info ] 10.2.130.178/CTT-MS-app/query/stuffname?cookie=3597b8b59b59787b479b2870bc596cbc&cagetoryName=%E9%93%81%E9%80%9A%E6%9D%90%E6%96%99 [运行时间：0.525278s][吞吐率：1.90req/s] [内存消耗：3,734.58kb] [文件加载：57]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Query',
+    2 => 'stuffname',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.130.178',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'staffname=3597b8b59b59787b479b2870bc596cbc',
+)
+[ info ] [ PARAM ] array (
+  'cookie' => '3597b8b59b59787b479b2870bc596cbc',
+  'cagetoryName' => '铁通材料',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001353s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.008003s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '3597b8b59b59787b479b2870bc596cbc' LIMIT 1 [ RunTime:0.000653s ]
+[ error ] [0]方法参数错误:categoryName[E:\code\php\CTT-MS-app\thinkphp\library\think\App.php:282]
+---------------------------------------------------------------
+[ 2017-11-21T14:04:15+08:00 ] 10.2.130.178 10.2.130.115 GET /CTT-MS-app/query/stuffname?cookie=3597b8b59b59787b479b2870bc596cbc&categoryName=%E9%93%81%E9%80%9A%E6%9D%90%E6%96%99
+[ info ] 10.2.130.178/CTT-MS-app/query/stuffname?cookie=3597b8b59b59787b479b2870bc596cbc&categoryName=%E9%93%81%E9%80%9A%E6%9D%90%E6%96%99 [运行时间：0.039182s][吞吐率：25.52req/s] [内存消耗：3,686.22kb] [文件加载：56]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Query',
+    2 => 'stuffname',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.2.130.178',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'staffname=3597b8b59b59787b479b2870bc596cbc',
+)
+[ info ] [ PARAM ] array (
+  'cookie' => '3597b8b59b59787b479b2870bc596cbc',
+  'categoryName' => '铁通材料',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Query->stuffName[ E:\code\php\CTT-MS-app\application\index\controller\Query.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001204s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001608s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '3597b8b59b59787b479b2870bc596cbc' LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT `id`,`stuff_name` FROM `stuff` WHERE  `category_name` = '铁通材料' [ RunTime:0.000226s ]
