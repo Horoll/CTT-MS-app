@@ -35,6 +35,8 @@ class Query extends Base
     //根据材料大类返回材料名称和id
     public function stuffName($categoryName){
         $res = Db::table('stuff')->where('category_name',$categoryName)->column('stuff_name','id');
+
+        //逃课来改的bug
         $data = [];
         foreach ($res as $key=>$value){
             $iter = ['id'=>$key,'name'=>$value];

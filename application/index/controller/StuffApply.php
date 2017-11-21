@@ -41,8 +41,8 @@ class StuffApply extends Base
 
     //装维申请材料
     public function apply(){
-        //$json = $_POST['json'];
-        $json = '{"inventory_id":1,"storehouse":"丹棱一库","out_quantity":20,"staff":"张三","apply_date":"2017-11-17"}';
+        $json = $_POST['json'];
+        //$json = '{"inventory_id":1,"storehouse":"丹棱一库","out_quantity":20,"staff":"张三","apply_date":"2017-11-17"}';
         $data = json_decode($json,true);
 
 
@@ -86,7 +86,7 @@ class StuffApply extends Base
     //取消申请（只能在未确定领取之前取消）
     public function cancel($id){
         $res = $this->checkId($id);
-        if(!is_null(json_decode($res)))
+        if(!is_array($res))
             return $res;
         if($res['is_out']==4 || $res['is_out']==5)
             return returnWarning('材料已经发放，无法取消');
@@ -97,8 +97,23 @@ class StuffApply extends Base
     }
 
     //修改申请
-    public function chage(){
-        
+    public function change(){
+        $json = $_POST['json'];
+        $data = json_decode($json,true);
+        $res = $this->checkId($data['id']);
+        if(!is_array($res))
+            return $res;
+        if($res['is_out']==4 || $res['is_out']==5)
+            return returnWarning('材料已经发放，无法修改');
+
+        //检测调拨数量是否大于库存数
+        $num = db('inventory')->where('id',$data['inventory_id'])->value('quantity');
+        if($num<$data['out_quantity'])
+            return returnWarning('申请数量大于库存数量！');
+        //提交修改
+        if(Db::table('stuff_out_record')->update($data))
+            return returnSuccess('修改成功');
+        else return returnWarning('没有任何修改或数据不存在');
     }
 
     //重新提交申请
