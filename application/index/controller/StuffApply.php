@@ -88,7 +88,7 @@ class StuffApply extends Base
         $res = $this->checkId($id);
         if(!is_array($res))
             return $res;
-        if($res['is_out']==4 || $res['is_out']==5)
+        if($res['is_out']==3 || $res['is_out']==5)
             return returnWarning('材料已经发放，无法取消');
         Db::table('stuff_out_record')
             ->where('id',$id)
@@ -103,8 +103,8 @@ class StuffApply extends Base
         $res = $this->checkId($data['id']);
         if(!is_array($res))
             return $res;
-        if($res['is_out']==4 || $res['is_out']==5)
-            return returnWarning('材料已经发放，无法修改');
+        if($res['is_out']!=0 && $res['is_out']!=2 && $res['is_out']!=4)
+            return returnWarning('材料正在审批或已发放，无法修改');
 
         //检测调拨数量是否大于库存数
         $num = db('inventory')->where('id',$data['inventory_id'])->value('quantity');
@@ -117,8 +117,22 @@ class StuffApply extends Base
     }
 
     //重新提交申请
-    public function reSubmit(){
-        
+    public function reSubmit($id){
+        $res = $this->checkId($id);
+        if(!is_array($res))
+            return $res;
+        if($res['is_out']!=2 && $res['is_out']!=4)
+            return returnWarning('只有被驳回的申请才能重新提交');
+
+        Db::table('stuff_out_record')
+            ->where('id',$id)
+            ->update([
+                'operator1'=>null,
+                'operator2'=>null,
+                'apply_date'=>date('Y-m-d'),
+                'is_out'=>0
+                ]);
+        return returnSuccess('已重新申请');
     }
 
 }
