@@ -25,7 +25,11 @@ Route::rule([
 ]);
 
 Route::rule([
-    'stuffapply/apply' => 'index/StuffApply/apply',//材料发放申请
+    'stuffapply/apply' => 'index/StuffApply/apply',//提交申请
+    'stuffapply/check' => 'index/StuddApply/check',//查看自己的申请
+    'stuffapply/cancel' => 'index/StuddApply/cancel',//取消自己的申请
+    'stuffapply/change' => 'index/StuddApply/change',//修改自己的申请
+    'stuffapply/reSubmit' => 'index/StuddApply/reSubmit',//重新提交自己的申请
 ]);
 
 //各种选择的查询
