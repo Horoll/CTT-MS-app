@@ -120,6 +120,33 @@ class StuffApply extends Base
         else return returnWarning('没有任何修改或数据不存在');
     }
 
+    //确认接收材料
+    public function confirmReceive($id){
+        $res = $this->checkId($id);
+        if(!is_array($res))
+            return $res;
+        if($res['is_out']!=3)
+            return returnWarning('该申请还未能通过审批');
+        //检测调拨数量是否大于库存数
+        $num = db('inventory')
+            ->where('id',$res['inventory_id'])
+            ->value('quantity');
+        if($num<$res['out_quantity'])
+            return returnWarning('目前申请数量大于库存数量，无法发料！');
+        //修改申请状态，添加接收日期
+        Db::table('stuff_out_record')
+            ->where('id',$id)
+            ->update([
+                'out_date'=>date('Y-m-d'),
+                'is_out'=>5
+            ]);
+        //修改对应库存表中的库存数量
+        Db::table('inventory')
+            ->where('id',$res['inventory_id'])
+            ->setDec('quantity',$res['out_quantity']);
+        return returnSuccess('已确认接收');
+    }
+
     //重新提交申请
     public function reSubmit($id){
         $res = $this->checkId($id);

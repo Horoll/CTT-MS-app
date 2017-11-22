@@ -29,6 +29,7 @@ Route::rule([
     'stuffapply/check' => 'index/StuffApply/check',//查看自己的申请
     'stuffapply/cancel' => 'index/StuffApply/cancel',//取消自己的申请
     'stuffapply/change' => 'index/StuffApply/change',//修改自己的申请
+    'stuffapply/confirmreceive' => 'index/StuffApply/confirmReceive',//确认接收
     'stuffapply/resubmit' => 'index/StuffApply/reSubmit',//重新提交自己的申请
 ]);
 
