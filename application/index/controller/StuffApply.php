@@ -78,7 +78,7 @@ class StuffApply extends Base
         $data = [];
         $pages = ceil($count/$pageInate);
         array_push($data,['pages'=>$pages]);
-        array_push($data,['cur_page'=>$curPage]);
+        array_push($data,['curPage'=>$curPage]);
         array_push($data,$apps);
         return json($data);
     }
