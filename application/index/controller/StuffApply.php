@@ -59,7 +59,7 @@ class StuffApply extends Base
         $data['staff'] = $staffName;
 
         //获取当前日期
-        $data['apply_data'] = date('Y-m-d');
+        $data['apply_date'] = date('Y-m-d');
 
         //添加记录到StuffOutRecord模型
         $res = Manage::add($this->model,$this->validate,$data);
@@ -68,11 +68,19 @@ class StuffApply extends Base
 
     //查看自己的材料申请
     public function check($curPage=1,$pageInate=5){
+        $count = Db::table('stuff_out_record')
+            ->where('staff',$this->staff->name)
+            ->count();
         $apps = Db::table('stuff_out_record')
             ->where('staff',$this->staff->name)
             ->page($curPage,$pageInate)
             ->select();
-        return json($apps);
+        $data = [];
+        $pages = ceil($count/$pageInate);
+        array_push($data,['pages'=>$pages]);
+        array_push($data,['cur_page'=>$curPage]);
+        array_push($data,$apps);
+        return json($data);
     }
 
     //检查id
