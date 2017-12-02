@@ -136,3 +136,38 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.000876s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `stuff_out_record` WHERE  `staff` = '张眼镜' LIMIT 1 [ RunTime:0.002741s ]
 [ sql ] [ SQL ] SELECT * FROM `stuff_out_record` WHERE  `staff` = '张眼镜' LIMIT 0,5 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2017-12-02T17:08:41+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/check
+[ info ] localhost/ctt-ms-app/stuffapply/check [运行时间：0.762513s][吞吐率：1.31req/s] [内存消耗：3,764.69kb] [文件加载：58]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'check',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=4484905984; csrftoken=hP2kz6A2TThNEpfhLAqDRyRBIL6N1BjynFRQQe1Pbmw1jSePrYpG4BFXC6lWgmlw; _ga=GA1.1.203632370.1510848144; staffname=1652f22fafb5d271df43e8adbdce5f36; PHPSESSID=hesfesovs31tjdpktftdp0vn46; username=dc60972d72192490e5594093ddc22da3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\StuffApply->check[ E:\code\php\CTT-MS-app\application\index\controller\StuffApply.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.006224s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '1652f22fafb5d271df43e8adbdce5f36' LIMIT 1 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `stuff_out_record` WHERE  `staff` = '张眼镜' LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `stuff_out_record` WHERE  `staff` = '张眼镜' LIMIT 0,5 [ RunTime:0.000280s ]

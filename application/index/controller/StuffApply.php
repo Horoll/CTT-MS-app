@@ -75,12 +75,10 @@ class StuffApply extends Base
             ->where('staff',$this->staff->name)
             ->page($curPage,$pageInate)
             ->select();
-        $data = [];
         $pages = ceil($count/$pageInate);
-        array_push($data,['pages'=>$pages]);
-        array_push($data,['curPage'=>$curPage]);
-        array_push($data,$apps);
-        return json($data);
+        array_unshift($apps,['curPage'=>$curPage]);
+        array_unshift($apps,['pages'=>$pages]);
+        return json($apps);
     }
 
     //检查id
