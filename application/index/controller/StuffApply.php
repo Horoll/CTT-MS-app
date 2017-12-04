@@ -76,9 +76,11 @@ class StuffApply extends Base
             ->page($curPage,$pageInate)
             ->select();
         $pages = ceil($count/$pageInate);
-        array_unshift($apps,['curPage'=>$curPage]);
-        array_unshift($apps,['pages'=>$pages]);
-        return json($apps);
+        $data = [];
+        $data['curPage'] = $curPage;
+        $data['pages'] = $pages;
+        $data['data'] = $apps;
+        return json($data);
     }
 
     //检查id
