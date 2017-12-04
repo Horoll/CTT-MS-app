@@ -71,7 +71,12 @@ class StuffApply extends Base
         $count = Db::table('stuff_out_record')
             ->where('staff',$this->staff->name)
             ->count();
+        $filed = ['a.*','b.manufacturer','b.type','b.stuff_id','c.stuff_name','c.unit','c.category_name'];
         $apps = Db::table('stuff_out_record')
+            ->alias('a')
+            ->join('inventory b','a.inventory_id = b.id')
+            ->join('stuff c','b.stuff_id = c.id')
+            ->field($filed)
             ->where('staff',$this->staff->name)
             ->page($curPage,$pageInate)
             ->select();
