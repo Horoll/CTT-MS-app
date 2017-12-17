@@ -78,6 +78,7 @@ class StuffApply extends Base
             ->field($filed)
             ->where('staff',$this->staff->name)
             ->page($curPage,$pageInate)
+            ->order('apply_date desc')
             ->select();
         $pages = ceil($count/$pageInate);
         $data = [];
