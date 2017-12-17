@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2833520-b743-44fc-8f94-d1ced8c92879" name="Default" comment="ogn">
-      <change beforePath="$PROJECT_DIR$/application/index/controller/StuffApply.php" afterPath="$PROJECT_DIR$/application/index/controller/StuffApply.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/CTT-MS-app.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +30,8 @@
       <file leaf-file-name="Query.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/index/controller/Query.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+            <state relative-caret-position="216">
+              <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -86,7 +89,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -185,15 +188,15 @@
       <workItem from="1513431920143" duration="41000" />
       <workItem from="1513431981766" duration="10000" />
       <workItem from="1513432040349" duration="89000" />
-      <workItem from="1513476341353" duration="5341000" />
+      <workItem from="1513476341353" duration="5942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37197000" />
+    <option name="totallyTimeSpent" value="37798000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -589,8 +592,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Query.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="216">
+          <caret line="35" column="45" lean-forward="false" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding />
         </state>
       </provider>
