@@ -42,7 +42,6 @@ class StuffApply extends Base
     //装维申请材料
     public function apply(){
         $json = $_POST['json'];
-        //$json = '{"inventory_id":1,"storehouse":"丹棱一库","out_quantity":20,"odd_quantity":7}';
         $data = json_decode($json,true);
 
 
