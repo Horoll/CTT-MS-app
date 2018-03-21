@@ -1,0 +1,377 @@
+---------------------------------------------------------------
+[ 2018-03-21T18:27:52+08:00 ] ::1 ::1 GET /ctt-ms-app/
+[ info ] localhost/ctt-ms-app/ [运行时间：0.678806s][吞吐率：1.47req/s] [内存消耗：1,882.63kb] [文件加载：41]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-21T18:28:42+08:00 ] ::1 ::1 GET /ctt-ms-app/login?stafname=%E8%8B%8F%E6%B6%9B&password=123456
+[ info ] localhost/ctt-ms-app/login?stafname=%E8%8B%8F%E6%B6%9B&password=123456 [运行时间：0.259938s][吞吐率：3.85req/s] [内存消耗：2,310.06kb] [文件加载：46]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0',
+)
+[ info ] [ PARAM ] array (
+  'stafname' => '苏涛',
+  'password' => '123456',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:staffname[E:\code\php\CTT-MS-app\thinkphp\library\think\App.php:282]
+---------------------------------------------------------------
+[ 2018-03-21T18:29:12+08:00 ] ::1 ::1 GET /ctt-ms-app/login?staffname=%E8%8B%8F%E6%B6%9B&password=123456
+[ info ] localhost/ctt-ms-app/login?staffname=%E8%8B%8F%E6%B6%9B&password=123456 [运行时间：0.251404s][吞吐率：3.98req/s] [内存消耗：3,302.73kb] [文件加载：52]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '苏涛',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012124s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.010590s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '苏涛' LIMIT 1 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2018-03-21T18:30:04+08:00 ] ::1 ::1 GET /ctt-ms-app/login?staffname=13795544435&password=123456
+[ info ] localhost/ctt-ms-app/login?staffname=13795544435&password=123456 [运行时间：0.060914s][吞吐率：16.42req/s] [内存消耗：3,296.01kb] [文件加载：53]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Auth',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0',
+)
+[ info ] [ PARAM ] array (
+  'staffname' => '13795544435',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Auth->login[ E:\code\php\CTT-MS-app\application\index\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001139s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `phone` = '13795544435' LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] UPDATE `staff`  SET `cookie_name`='70c9b7021ae39fc70a7e631c6a9db82c'  WHERE  `phone` = '13795544435' [ RunTime:0.000728s ]
+---------------------------------------------------------------
+[ 2018-03-21T18:31:59+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/checknews
+[ info ] localhost/ctt-ms-app/stuffapply/checknews [运行时间：0.230912s][吞吐率：4.33req/s] [内存消耗：3,781.41kb] [文件加载：58]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'checkNews',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0; staffname=70c9b7021ae39fc70a7e631c6a9db82c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\StuffApply->checkNews[ E:\code\php\CTT-MS-app\application\index\controller\StuffApply.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001145s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.007187s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '70c9b7021ae39fc70a7e631c6a9db82c' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `stuff_out_record` WHERE  `staff` = '苏涛' LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`manufacturer`,`b`.`type`,`b`.`stuff_id`,`c`.`stuff_name`,`c`.`unit`,`c`.`category_name` FROM `stuff_out_record` `a` INNER JOIN `inventory` `b` ON `a`.`inventory_id`=`b`.`id` INNER JOIN `stuff` `c` ON `b`.`stuff_id`=`c`.`id` WHERE  `staff` = '苏涛'  AND `state` = 1 ORDER BY apply_date desc [ RunTime:0.017653s ]
+---------------------------------------------------------------
+[ 2018-03-21T18:43:20+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/checknews
+[ info ] localhost/ctt-ms-app/stuffapply/checknews [运行时间：0.053922s][吞吐率：18.55req/s] [内存消耗：3,782.36kb] [文件加载：58]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'checkNews',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0; staffname=70c9b7021ae39fc70a7e631c6a9db82c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\StuffApply->checkNews[ E:\code\php\CTT-MS-app\application\index\controller\StuffApply.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001359s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001659s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '70c9b7021ae39fc70a7e631c6a9db82c' LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.006524s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `stuff_out_record` WHERE  `staff` = '苏涛' LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`manufacturer`,`b`.`type`,`b`.`stuff_id`,`c`.`stuff_name`,`c`.`unit`,`c`.`category_name` FROM `stuff_out_record` `a` INNER JOIN `inventory` `b` ON `a`.`inventory_id`=`b`.`id` INNER JOIN `stuff` `c` ON `b`.`stuff_id`=`c`.`id` WHERE  `staff` = '苏涛'  AND `state` = 1 ORDER BY apply_date desc [ RunTime:0.000867s ]
+---------------------------------------------------------------
+[ 2018-03-21T18:50:07+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/checknews
+[ info ] localhost/ctt-ms-app/stuffapply/checknews [运行时间：0.048126s][吞吐率：20.78req/s] [内存消耗：3,772.05kb] [文件加载：58]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'checkNews',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0; staffname=70c9b7021ae39fc70a7e631c6a9db82c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\StuffApply->checkNews[ E:\code\php\CTT-MS-app\application\index\controller\StuffApply.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001053s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001004s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '70c9b7021ae39fc70a7e631c6a9db82c' LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `stuff_out_record` WHERE  `staff` = '苏涛' LIMIT 1 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`out_quantity`,`a`.`is_out`,`b`.`type`,`c`.`stuff_name` FROM `stuff_out_record` `a` INNER JOIN `inventory` `b` ON `a`.`inventory_id`=`b`.`id` INNER JOIN `stuff` `c` ON `b`.`stuff_id`=`c`.`id` WHERE  `staff` = '苏涛'  AND `state` = 1 ORDER BY apply_date desc [ RunTime:0.001666s ]
+---------------------------------------------------------------
+[ 2018-03-21T18:50:08+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/checknews
+[ info ] localhost/ctt-ms-app/stuffapply/checknews [运行时间：0.046090s][吞吐率：21.70req/s] [内存消耗：3,772.05kb] [文件加载：58]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'checkNews',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0; staffname=70c9b7021ae39fc70a7e631c6a9db82c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\StuffApply->checkNews[ E:\code\php\CTT-MS-app\application\index\controller\StuffApply.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001160s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '70c9b7021ae39fc70a7e631c6a9db82c' LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `stuff_out_record` WHERE  `staff` = '苏涛' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`out_quantity`,`a`.`is_out`,`b`.`type`,`c`.`stuff_name` FROM `stuff_out_record` `a` INNER JOIN `inventory` `b` ON `a`.`inventory_id`=`b`.`id` INNER JOIN `stuff` `c` ON `b`.`stuff_id`=`c`.`id` WHERE  `staff` = '苏涛'  AND `state` = 1 ORDER BY apply_date desc [ RunTime:0.000963s ]
+---------------------------------------------------------------
+[ 2018-03-21T18:54:51+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/checknews
+[ info ] localhost/ctt-ms-app/stuffapply/checknews [运行时间：0.052107s][吞吐率：19.19req/s] [内存消耗：3,772.90kb] [文件加载：58]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'checkNews',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0; staffname=70c9b7021ae39fc70a7e631c6a9db82c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\StuffApply->checkNews[ E:\code\php\CTT-MS-app\application\index\controller\StuffApply.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001127s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.002529s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '70c9b7021ae39fc70a7e631c6a9db82c' LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.006071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `stuff_out_record` WHERE  `staff` = '苏涛' LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`out_quantity`,`a`.`is_out`,`b`.`type`,`c`.`stuff_name` FROM `stuff_out_record` `a` INNER JOIN `inventory` `b` ON `a`.`inventory_id`=`b`.`id` INNER JOIN `stuff` `c` ON `b`.`stuff_id`=`c`.`id` WHERE  `staff` = '苏涛'  AND `state` = 1 ORDER BY apply_date desc [ RunTime:0.000795s ]
+---------------------------------------------------------------
+[ 2018-03-21T18:58:46+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/checknews
+[ info ] localhost/ctt-ms-app/stuffapply/checknews [运行时间：0.050970s][吞吐率：19.62req/s] [内存消耗：3,739.53kb] [文件加载：58]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'checkNews',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0; staffname=70c9b7021ae39fc70a7e631c6a9db82c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\StuffApply->checkNews[ E:\code\php\CTT-MS-app\application\index\controller\StuffApply.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001288s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '70c9b7021ae39fc70a7e631c6a9db82c' LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.006730s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `stuff_out_record` WHERE  `staff` = '苏涛' LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`out_quantity`,`a`.`is_out`,`b`.`type`,`c`.`stuff_name` FROM `stuff_out_record` `a` INNER JOIN `inventory` `b` ON `a`.`inventory_id`=`b`.`id` INNER JOIN `stuff` `c` ON `b`.`stuff_id`=`c`.`id` WHERE  `staff` = '苏涛'  AND `state` = 1 ORDER BY apply_date desc [ RunTime:0.000840s ]
+[ sql ] [ SQL ] UPDATE `stuff_out_record`  SET `state`=0  WHERE  `staff` = '苏涛'  AND `state` = 1 [ RunTime:0.000366s ]
+---------------------------------------------------------------
+[ 2018-03-21T18:58:47+08:00 ] ::1 ::1 GET /ctt-ms-app/stuffapply/checknews
+[ info ] localhost/ctt-ms-app/stuffapply/checknews [运行时间：0.044899s][吞吐率：22.27req/s] [内存消耗：3,773.56kb] [文件加载：58]
+[ info ] [ LANG ] E:\code\php\CTT-MS-app\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'StuffApply',
+    2 => 'checkNews',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => '_ga=GA1.1.1466583466.1516704456; pgv_pvi=5345645568; Phpstorm-a91628c3=98583a71-5e9e-4b72-aeb1-ad6a85098966; _gid=GA1.1.1687145065.1521558439; name=%E7%8E%8B%E4%BA%94; id=3; admin=root; state=0; staffname=70c9b7021ae39fc70a7e631c6a9db82c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\StuffApply->checkNews[ E:\code\php\CTT-MS-app\application\index\controller\StuffApply.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001055s ] mysql:host=127.0.0.1;dbname=ctt-ms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `staff` [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT * FROM `staff` WHERE  `cookie_name` = '70c9b7021ae39fc70a7e631c6a9db82c' LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stuff_out_record` [ RunTime:0.004226s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `stuff_out_record` WHERE  `staff` = '苏涛' LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`out_quantity`,`a`.`is_out`,`b`.`type`,`c`.`stuff_name` FROM `stuff_out_record` `a` INNER JOIN `inventory` `b` ON `a`.`inventory_id`=`b`.`id` INNER JOIN `stuff` `c` ON `b`.`stuff_id`=`c`.`id` WHERE  `staff` = '苏涛'  AND `state` = 1 ORDER BY apply_date desc [ RunTime:0.000837s ]

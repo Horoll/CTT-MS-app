@@ -31,6 +31,7 @@ Route::rule([
     'stuffapply/change' => 'index/StuffApply/change',//修改自己的申请
     'stuffapply/confirmreceive' => 'index/StuffApply/confirmReceive',//确认接收
     'stuffapply/resubmit' => 'index/StuffApply/reSubmit',//重新提交自己的申请
+    'stuffapply/checknews'=>'index/StuffApply/checkNews',//装维查看新审核的消息
 ]);
 
 //各种选择的查询

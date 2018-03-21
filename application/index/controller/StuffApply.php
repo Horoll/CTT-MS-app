@@ -88,6 +88,33 @@ class StuffApply extends Base
         return json($data);
     }
 
+    //查看新消息
+    public function checkNews(){
+        $count = Db::table('stuff_out_record')
+            ->where('staff',$this->staff->name)
+            ->count();
+        $filed = ['a.id','a.out_quantity','a.is_out','b.type','c.stuff_name'];
+        $apps = Db::table('stuff_out_record')
+            ->alias('a')
+            ->join('inventory b','a.inventory_id = b.id')
+            ->join('stuff c','b.stuff_id = c.id')
+            ->field($filed)
+            ->where('staff',$this->staff->name)
+            ->where('state',1)
+            ->order('apply_date desc')
+            ->select();
+        if(empty($apps))
+            return returnWarning('没有动态');
+        $data = [];
+        $data['state'] = 'success';
+        $data['data'] = $apps;
+        Db::table('stuff_out_record')
+            ->where('staff',$this->staff->name)
+            ->where('state',1)
+            ->setField('state', 0);
+        return json($data);
+    }
+
     //检查id
     private function checkId($id){
         $app = Db::table('stuff_out_record')
